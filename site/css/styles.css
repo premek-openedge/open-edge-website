@@ -95,7 +95,7 @@ strong { font-weight: 600; }
 .brand__mark { align-self: center; flex: none; }
 .footer__mark { display: inline-block; vertical-align: -3px; margin-right: 8px; }
 .brand b { font-weight: 600; }
-.brand__dim { color: var(--accent); }
+.brand__dim { color: var(--accent); margin-left: 4px; }
 
 .nav__links { display: flex; gap: 26px; margin-left: auto; }
 .nav__links a {
