@@ -1,20 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#34d399"/>
-      <stop offset="1" stop-color="#059669"/>
-    </linearGradient>
-  </defs>
-  <rect x="4" y="4" width="56" height="56" rx="15" fill="#0b1220"/>
-  <g stroke="url(#g)" stroke-width="3.2" fill="none" stroke-linecap="round">
-    <path d="M20 44 L20 24 L32 17 L44 24"/>
-    <path d="M20 24 L32 31 L44 24"/>
-    <path d="M32 31 L32 47"/>
-  </g>
-  <g fill="url(#g)">
-    <circle cx="20" cy="24" r="4.4"/>
-    <circle cx="44" cy="24" r="4.4"/>
-    <circle cx="32" cy="47" r="4.4"/>
-    <circle cx="32" cy="17" r="3.4" fill="#a7f3d0"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Open Edge — "The Open Meter": gauge arc open at the bottom, accent needle.
+       Colors adapt to the browser/tab theme via prefers-color-scheme. -->
+  <style>
+    .fg { stroke: #16130f; }
+    .ac { stroke: #0b6b43; fill: #0b6b43; }
+    @media (prefers-color-scheme: dark) {
+      .fg { stroke: #ece9e3; }
+      .ac { stroke: #5fd39a; fill: #5fd39a; }
+    }
+  </style>
+  <path class="fg" d="M11.27 36.73 A18 18 0 1 1 36.73 36.73" fill="none" stroke-width="4.2" stroke-linecap="round"/>
+  <line class="ac" x1="24" y1="24" x2="33.2" y2="14.8" stroke-width="4.2" stroke-linecap="round"/>
+  <circle class="ac" cx="24" cy="24" r="3.8" stroke="none"/>
 </svg>
