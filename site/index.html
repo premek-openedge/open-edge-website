@@ -291,10 +291,10 @@
           <div class="item__n">02</div>
           <div class="item__body">
             <h3>Clearing Internet service usage is a new revenue stream for ISPs</h3>
-            <p>Every metered request clears through the ISP, so the operator finally shares in the
-            economics that used to pass straight over its network. Clearing folds into core
-            operations as a <strong>predictable new revenue line</strong> — earned from the value the
-            network carries, not just the bandwidth it sells.</p>
+            <p>Every metered request clears through the ISP. The operator advances settlement,
+            validates usage and takes a defined share of cleared volume — a
+            <strong>predictable new revenue line</strong> derived from the settlement work itself,
+            not from the bandwidth it sells.</p>
             <span class="item__more">In depth</span>
           </div>
         </div>
@@ -337,25 +337,24 @@
         <div class="detail__pane">
           <p class="meta meta--accent">In depth · 02</p>
           <div class="detail__prose">
-            <p>In every mature market, the party that stands between transacting sides and
-            guarantees settlement is paid for it — card networks, clearing houses and exchanges all
-            live on this role. The Internet has been the exception: an economy of billions of daily
-            transactions running over operators who earn nothing from any of them. Reinvented as
-            clearing companies, ISPs close that anomaly. They front the liquidity from which
-            services are paid, verify the records of usage, absorb the reconciliation and the
-            disputes — and earn from this financial work a revenue stream unrelated to selling
-            bandwidth.</p>
-            <p>Federation is what makes the role valuable. Any single operator’s traffic is a
-            fragment, of little interest to anyone beyond it; thousands of operators clearing
-            through one pool constitute the deepest market on the Internet, and a small share of
-            that market is worth more than complete ownership of a fragment. Joining is rational not
-            despite the sharing, but because of it.</p>
-            <p>The role also carries influence of a kind ISPs have never held. A say in how the
-            system evolves is distributed according to activity actually cleared — not capital, not
-            tokens — so the operators who carry the network’s economy hold a proportionate hand on
-            its rules. After three decades of watching the Internet’s direction being set above
-            their heads, the companies that own its physical body acquire a vote weighted by the
-            work they do.</p>
+            <p>In ESP the ISP occupies the clearing position: it sits between the application
+            delivering a service and the user consuming it, and guarantees that the two settle.
+            Concretely, the operator advances funds from a pre-committed pool, validates the metered
+            record of each unit of usage, and bears the cost of reconciliation and chargebacks. This
+            is the function performed by card networks, clearing houses and exchanges, and it is
+            compensated the same way — a fee levied on cleared volume. For the operator it is a
+            revenue line tied to settlement, independent of the bandwidth it sells.</p>
+            <p>The position was previously vacant. Usage flowed across operators’ networks
+            continuously while settlement, where it occurred at all, happened beyond them; the
+            operator earned only its flat access fee and shared in none of the economics its network
+            carried.</p>
+            <p>Federation defines the integration surface. Because operators clear through one
+            protocol rather than each on its own terms, an application integrates against the
+            protocol a single time and reaches the users of every federated ISP — no per-operator
+            agreements, metering or settlement. The protocol stands as one counterparty to each
+            side: a single settlement interface facing the application, a single clearing pool
+            facing the operator. A lone operator’s traffic would be too fragmented to settle against
+            or build on; federation is what makes the role workable at all.</p>
           </div>
         </div>
         <div class="detail__pane">
